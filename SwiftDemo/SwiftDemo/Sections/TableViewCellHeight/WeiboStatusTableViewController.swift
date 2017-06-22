@@ -13,7 +13,6 @@ private let ProfileTableViewControllerCellReuseIdentifier = "StatusTableViewCell
 
 class WeiboStatusTableViewController: UITableViewController {
     
-    
     // MARK: - LifeCycle
     
     override func viewDidLoad() {
@@ -41,6 +40,14 @@ class WeiboStatusTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
+    // MARK: - Private property
+    
+    fileprivate var datas = [StatusTableViewModel]()
+    
+}
+
+extension WeiboStatusTableViewController {
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,9 +65,4 @@ class WeiboStatusTableViewController: UITableViewController {
         }
         return StatusTableViewCell()
     }
-    
-    // MARK: - Private property
-    
-    fileprivate var datas = [StatusTableViewModel]()
-    
 }

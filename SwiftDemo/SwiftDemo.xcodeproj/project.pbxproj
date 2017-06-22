@@ -16,6 +16,7 @@
 		279BBD8A1EFA42B40023B573 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BBD891EFA42B40023B573 /* StatusTableViewCell.swift */; };
 		279BBD8C1EFA45E90023B573 /* WeiboStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BBD8B1EFA45E90023B573 /* WeiboStatusTableViewController.swift */; };
 		279BBD8E1EFA46710023B573 /* StatusTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BBD8D1EFA46710023B573 /* StatusTableViewModel.swift */; };
+		27A5E50F1EFBB3EA00D87D19 /* CATransform3DDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A5E50E1EFBB3EA00D87D19 /* CATransform3DDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		279BBD891EFA42B40023B573 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 		279BBD8B1EFA45E90023B573 /* WeiboStatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboStatusTableViewController.swift; sourceTree = "<group>"; };
 		279BBD8D1EFA46710023B573 /* StatusTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewModel.swift; sourceTree = "<group>"; };
+		27A5E50E1EFBB3EA00D87D19 /* CATransform3DDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATransform3DDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		279BBD871EFA42090023B573 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				27A5E50D1EFBB3AB00D87D19 /* CATransform 3D */,
 				279BBD881EFA42090023B573 /* TableViewCellHeight */,
 			);
 			path = Sections;
@@ -98,6 +101,14 @@
 				279BBD8B1EFA45E90023B573 /* WeiboStatusTableViewController.swift */,
 			);
 			path = TableViewCellHeight;
+			sourceTree = "<group>";
+		};
+		27A5E50D1EFBB3AB00D87D19 /* CATransform 3D */ = {
+			isa = PBXGroup;
+			children = (
+				27A5E50E1EFBB3EA00D87D19 /* CATransform3DDemo.swift */,
+			);
+			path = "CATransform 3D";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A5E50F1EFBB3EA00D87D19 /* CATransform3DDemo.swift in Sources */,
 				279BBD8C1EFA45E90023B573 /* WeiboStatusTableViewController.swift in Sources */,
 				279BBD8E1EFA46710023B573 /* StatusTableViewModel.swift in Sources */,
 				279BBD761EFA3E8A0023B573 /* SwiftDemo.xcdatamodeld in Sources */,
@@ -344,6 +356,7 @@
 				279BBD811EFA3E8A0023B573 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
