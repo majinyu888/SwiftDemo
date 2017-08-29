@@ -240,6 +240,29 @@
                                             <segue destination="Y9m-9c-8Oj" kind="show" id="n6M-co-YC4"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KYw-Gc-cV7">
+                                        <rect key="frame" x="0.0" y="331.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KYw-Gc-cV7" id="nsf-2q-X04">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AV Foundation - 视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW9-rT-xw7">
+                                                    <rect key="frame" x="20" y="13" width="137" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qW9-rT-xw7" firstAttribute="leading" secondItem="nsf-2q-X04" secondAttribute="leading" constant="20" symbolic="YES" id="ap5-P3-xbk"/>
+                                                <constraint firstItem="qW9-rT-xw7" firstAttribute="centerY" secondItem="nsf-2q-X04" secondAttribute="centerY" id="rnA-DI-zUO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="c8t-aO-TxK" kind="show" id="0ze-cg-CBv"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -365,8 +388,119 @@
             </objects>
             <point key="canvasLocation" x="-2244" y="971"/>
         </scene>
+        <!--Foundation Controller-->
+        <scene sceneID="lqj-kK-x9P">
+            <objects>
+                <viewController id="c8t-aO-TxK" customClass="AVFoundationController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4dK-8l-3jC"/>
+                        <viewControllerLayoutGuide type="bottom" id="9LH-Se-Nip"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EcK-Aa-tRa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LX7-sn-ppw">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et6-RU-g8H">
+                                        <rect key="frame" x="315" y="16" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CtK-i4-kBp"/>
+                                            <constraint firstAttribute="width" constant="44" id="VMv-lK-Chk"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="Flash Off Icon"/>
+                                        <connections>
+                                            <action selector="toggleFlash:" destination="c8t-aO-TxK" eventType="touchUpInside" id="LHa-Ns-hqj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWe-as-BE1">
+                                        <rect key="frame" x="315" y="60" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MnL-Mw-6mj"/>
+                                            <constraint firstAttribute="width" constant="44" id="xWz-KN-mZM"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="Rear Camera Icon"/>
+                                        <connections>
+                                            <action selector="switchCameras:" destination="c8t-aO-TxK" eventType="touchUpInside" id="MJj-1B-Gs0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVk-Ka-y2r">
+                                        <rect key="frame" x="16" y="519" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="cM8-Tw-Cfo"/>
+                                            <constraint firstAttribute="height" constant="44" id="zEY-hG-5rn"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="Photo Camera Icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2B-VQ-msb">
+                                        <rect key="frame" x="16" y="563" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="7NO-CE-P1G"/>
+                                            <constraint firstAttribute="height" constant="44" id="8uy-HE-yNR"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="Video Camera Icon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bWe-as-BE1" secondAttribute="trailing" constant="16" id="1Ej-ux-EBN"/>
+                                    <constraint firstItem="s2B-VQ-msb" firstAttribute="leading" secondItem="LX7-sn-ppw" secondAttribute="leading" constant="16" id="Bw9-uA-rVI"/>
+                                    <constraint firstItem="ZVk-Ka-y2r" firstAttribute="leading" secondItem="LX7-sn-ppw" secondAttribute="leading" constant="16" id="KdQ-0T-9KB"/>
+                                    <constraint firstItem="s2B-VQ-msb" firstAttribute="top" secondItem="ZVk-Ka-y2r" secondAttribute="bottom" id="NON-9u-SMD"/>
+                                    <constraint firstItem="bWe-as-BE1" firstAttribute="top" secondItem="et6-RU-g8H" secondAttribute="bottom" id="cGD-Qp-777"/>
+                                    <constraint firstItem="et6-RU-g8H" firstAttribute="top" secondItem="LX7-sn-ppw" secondAttribute="top" constant="16" id="m5F-cY-CIY"/>
+                                    <constraint firstAttribute="bottom" secondItem="s2B-VQ-msb" secondAttribute="bottom" constant="16" id="rdu-ex-aRN"/>
+                                    <constraint firstItem="s2B-VQ-msb" firstAttribute="top" secondItem="ZVk-Ka-y2r" secondAttribute="bottom" id="sIg-lw-hOd"/>
+                                    <constraint firstAttribute="trailing" secondItem="et6-RU-g8H" secondAttribute="trailing" constant="16" id="sg6-vd-g3g"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxE-n6-ViZ">
+                                <rect key="frame" x="159.5" y="596" width="55" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="YRj-FZ-gWC"/>
+                                    <constraint firstAttribute="width" constant="55" id="iTb-Uo-CMW"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="captureImage:" destination="c8t-aO-TxK" eventType="touchUpInside" id="sHL-iY-VOp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9LH-Se-Nip" firstAttribute="top" secondItem="LX7-sn-ppw" secondAttribute="bottom" id="Nvx-1q-6ZB"/>
+                            <constraint firstItem="LX7-sn-ppw" firstAttribute="leading" secondItem="EcK-Aa-tRa" secondAttribute="leading" id="OAE-zD-UkW"/>
+                            <constraint firstItem="rxE-n6-ViZ" firstAttribute="centerX" secondItem="EcK-Aa-tRa" secondAttribute="centerX" id="Tbf-vz-zia"/>
+                            <constraint firstItem="LX7-sn-ppw" firstAttribute="top" secondItem="4dK-8l-3jC" secondAttribute="bottom" id="UzN-aC-DoR"/>
+                            <constraint firstAttribute="trailing" secondItem="LX7-sn-ppw" secondAttribute="trailing" id="f2q-WO-yXk"/>
+                            <constraint firstItem="9LH-Se-Nip" firstAttribute="top" secondItem="rxE-n6-ViZ" secondAttribute="bottom" constant="16" id="sth-2d-eR7"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="captureButton" destination="rxE-n6-ViZ" id="tO7-sN-fvb"/>
+                        <outlet property="capturePreviewView" destination="LX7-sn-ppw" id="G31-48-lFm"/>
+                        <outlet property="photoModeButton" destination="ZVk-Ka-y2r" id="Zru-CE-Wwg"/>
+                        <outlet property="toggleCameraButton" destination="bWe-as-BE1" id="Ydw-aN-TRo"/>
+                        <outlet property="toggleFlashButton" destination="et6-RU-g8H" id="ru4-yT-rJq"/>
+                        <outlet property="videoModeButton" destination="s2B-VQ-msb" id="zVF-4Y-D5b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akF-ck-mMN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-886" y="969"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Flash Off Icon" width="24" height="24"/>
+        <image name="Photo Camera Icon" width="24" height="24"/>
+        <image name="Rear Camera Icon" width="24" height="24"/>
+        <image name="Video Camera Icon" width="24" height="24"/>
         <image name="logo_head" width="994" height="966"/>
         <image name="logo_v" width="45" height="44"/>
     </resources>

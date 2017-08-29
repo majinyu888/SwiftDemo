@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		274ACA571F0496120024D3D5 /* AVFoundationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274ACA561F0496120024D3D5 /* AVFoundationController.swift */; };
+		274ACA591F049BD80024D3D5 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274ACA581F049BD80024D3D5 /* CameraController.swift */; };
 		279BBD6E1EFA3E8A0023B573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BBD6D1EFA3E8A0023B573 /* AppDelegate.swift */; };
 		279BBD731EFA3E8A0023B573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279BBD711EFA3E8A0023B573 /* Main.storyboard */; };
 		279BBD761EFA3E8A0023B573 /* SwiftDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 279BBD741EFA3E8A0023B573 /* SwiftDemo.xcdatamodeld */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		094E9CDBF5CF72FEC92EA3B8 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		274ACA561F0496120024D3D5 /* AVFoundationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVFoundationController.swift; sourceTree = "<group>"; };
+		274ACA581F049BD80024D3D5 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		279BBD6A1EFA3E8A0023B573 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279BBD6D1EFA3E8A0023B573 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279BBD721EFA3E8A0023B573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +76,15 @@
 				95E6BFAEBE58CE459D61C0F8 /* Pods_SwiftDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		274ACA551F0495F60024D3D5 /* AVFoundationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				274ACA561F0496120024D3D5 /* AVFoundationController.swift */,
+				274ACA581F049BD80024D3D5 /* CameraController.swift */,
+			);
+			path = AVFoundationDemo;
 			sourceTree = "<group>";
 		};
 		279BBD611EFA3E8A0023B573 = {
@@ -118,6 +131,7 @@
 		279BBD871EFA42090023B573 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				274ACA551F0495F60024D3D5 /* AVFoundationDemo */,
 				27A5E50D1EFBB3AB00D87D19 /* CATransform 3D */,
 				27C2FF691EFCA71F004B4AA0 /* Knowledge */,
 				27BEA6D01F00B63000EF89DF /* Lottie */,
@@ -318,10 +332,12 @@
 				279BBD8E1EFA46710023B573 /* StatusTableViewModel.swift in Sources */,
 				279BBD761EFA3E8A0023B573 /* SwiftDemo.xcdatamodeld in Sources */,
 				279BBD851EFA3FCF0023B573 /* MainController.swift in Sources */,
+				274ACA591F049BD80024D3D5 /* CameraController.swift in Sources */,
 				27C2FF6F1EFCEEC4004B4AA0 /* ScrollViewDemo.swift in Sources */,
 				279BBD6E1EFA3E8A0023B573 /* AppDelegate.swift in Sources */,
 				27BEA6D21F00B70800EF89DF /* LottieController.swift in Sources */,
 				279BBD8A1EFA42B40023B573 /* StatusTableViewCell.swift in Sources */,
+				274ACA571F0496120024D3D5 /* AVFoundationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
